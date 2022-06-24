@@ -1,0 +1,32 @@
+footer {
+    background-color: $white;
+    border-top: 1px solid rgba(38,38,40,.09);
+    padding: 20px 0;
+    .copyright {
+        font-size: 14px;
+        transition: color .5s;
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                margin-right: 30px;
+                font-size: 14px;
+                a {
+                    transition: color .5s;
+                }
+                
+            }
+        }
+    }
+    &.dark {
+        background-color: $primary;
+        transition: background-color .5s,color .5s;
+        
+        .copyright, nav ul li a {
+            color: $white;
+            transition: color .5s;
+        }
+
+    }
+}
